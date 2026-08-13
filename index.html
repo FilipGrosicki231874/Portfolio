@@ -1,276 +1,218 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Name — portfolio website">
+  <title>Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <a href="#home" class="logo">Name</a>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main role="main">
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-image">
+        <img src="https://placehold.co/900x1200/151515/ffffff?text=Your+Photo" alt="Placeholder portrait for Name">
+      </div>
 
-    <!-- ***** Work ***** -->
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Name</h1>
+        <h2>Your Professional Title</h2>
 
-    <section class="work" id="work">
-      <div class="row">
+        <p class="hero-description">
+          A short description about yourself and what you do. Tell visitors
+          what you specialize in, what you enjoy building, and what makes
+          your work unique.
+        </p>
+
+        <div class="skills" aria-label="Skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>Your Skill</span>
+        </div>
+
+        <a class="text-link" href="#work">
+          View my work <span>↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="work section">
+      <div class="section-heading">
+        <p class="eyebrow">Selected projects</p>
         <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
 
-    <!-- ***** Clients ***** -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
+      <div class="projects">
+        <!-- PROJECT 1: TEXT LEFT / IMAGE RIGHT -->
+        <article class="project project-image-right">
+          <div class="project-content">
+            <p class="project-number">01</p>
+            <h3>Project One</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              A short explanation of the project. Describe what you built,
+              the problem it solves, and your role in creating it.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a class="project-link" href="Github link" target="_blank" rel="noopener noreferrer">
+              View repository <span>↗</span>
+            </a>
           </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          <div class="project-image">
+            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+One"
+                 alt="Screenshot placeholder for Project One">
+          </div>
+        </article>
+
+        <!-- PROJECT 2: IMAGE LEFT / TEXT RIGHT -->
+        <article class="project project-image-left">
+          <div class="project-image">
+            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+Two"
+                 alt="Screenshot placeholder for Project Two">
+          </div>
+
+          <div class="project-content">
+            <p class="project-number">02</p>
+            <h3>Project Two</h3>
+            <p>
+              A short explanation of the project. Describe the technologies
+              you used and what you learned while building it.
+            </p>
+
+            <div class="project-tags">
+              <span>React</span>
+              <span>CSS</span>
+              <span>Git</span>
+            </div>
+
+            <a class="project-link" href="Github link" target="_blank" rel="noopener noreferrer">
+              View repository <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: TEXT LEFT / IMAGE RIGHT -->
+        <article class="project project-image-right">
+          <div class="project-content">
+            <p class="project-number">03</p>
+            <h3>Project Three</h3>
+            <p>
+              A short explanation of the project. Highlight the most
+              interesting features or technical challenges here.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Your Skill</span>
+            </div>
+
+            <a class="project-link" href="Github link" target="_blank" rel="noopener noreferrer">
+              View repository <span>↗</span>
+            </a>
+          </div>
+
+          <div class="project-image">
+            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+Three"
+                 alt="Screenshot placeholder for Project Three">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+      <div class="contact-intro">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's work<br><span>together.</span></h2>
+        <p>
+          Have a project, question, or opportunity? I'd love to hear from you.
+          You can reach me using the information below or send me a message.
+        </p>
+
+        <div class="contact-details">
+          <div>
+            <span>Email</span>
+            <a href="mailto:email@example.com">email@example.com</a>
+          </div>
+
+          <div>
+            <span>Phone</span>
+            <a href="tel:+31123456789">+31 123456789</a>
+          </div>
+
+          <div>
+            <span>LinkedIn</span>
+            <a href="LinkedIn link" target="_blank" rel="noopener noreferrer">
+              LinkedIn link ↗
+            </a>
+          </div>
+
+          <div>
+            <span>GitHub</span>
+            <a href="Github link" target="_blank" rel="noopener noreferrer">
+              Github link ↗
+            </a>
           </div>
         </div>
       </div>
+
+      <!--
+        GitHub Pages cannot process form submissions by itself.
+        Replace the action below with your preferred form service,
+        or change the form to a mailto link later.
+      -->
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6"
+                  placeholder="Tell me about your project..." required></textarea>
+
+        <button type="submit">
+          Send message <span>↗</span>
+        </button>
+      </form>
     </section>
   </main>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
+  <footer class="site-footer">
+    <p>© 2026 Name. All rights reserved.</p>
+    <a href="#home">Back to top ↑</a>
   </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
+  <script>
+    // Add a subtle class when the page has been scrolled.
+    const header = document.querySelector(".site-header");
 
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    });
+  </script>
+</body>
 </html>
