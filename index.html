@@ -36,7 +36,8 @@
         <p class="self-description">
           I'm a 22 year old student from Poland, 
           I came to the Netherlands to pursue education at Breda University of Aplied Sciences.
-          I studied Informational Tehnology
+          I studied Informational Tehnology in a technical highschool in Poland,
+          and now my goal is to specialise in the field of datascience.
         </p>
 
         <div class="skills" aria-label="Skills">
@@ -69,8 +70,7 @@
             <p class="project-number">01</p>
             <h3>Skin Cancer Detection</h3>
             <p>
-              A short explanation of the project. Describe what you built,
-              the problem it solves, and your role in creating it.
+              A short explanation of the project.
             </p>
 
             <div class="project-tags">
@@ -84,25 +84,26 @@
             </a>
           </div>
 
-          <div class="project-image">
-            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+One"
-                 alt="Screenshot placeholder for Project One">
+          <div class="project-image carousel">
+            <img src="project-1.jpg" alt="Project screenshot">
+            <img src="project-2.jpg" alt="Project screenshot">
+            <img src="project-3.jpg" alt="Project screenshot">
           </div>
         </article>
 
         <!-- PROJECT 2 -->
         <article class="project project-image-left">
-          <div class="project-image">
-            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+Two"
-                 alt="Screenshot placeholder for Project Two">
+          <div class="project-image carousel">
+            <img src="project-1.jpg" alt="Project screenshot">
+            <img src="project-2.jpg" alt="Project screenshot">
+            <img src="project-3.jpg" alt="Project screenshot">
           </div>
 
           <div class="project-content">
             <p class="project-number">02</p>
             <h3>PowerBI Dashboard: Transport at BUas</h3>
             <p>
-              A short explanation of the project. Describe the technologies
-              you used and what you learned while building it.
+              A short explanation of the project.
             </p>
 
             <div class="project-tags">
@@ -121,10 +122,9 @@
         <article class="project project-image-right">
           <div class="project-content">
             <p class="project-number">03</p>
-            <h3>Plant Enoculation for</h3>
+            <h3>Plant Enoculation for Netherlands Plant Eco-phenotyping Centre</h3>
             <p>
-              A short explanation of the project. Highlight the most
-              interesting features or technical challenges here.
+              A short explanation of the project.
             </p>
 
             <div class="project-tags">
@@ -138,25 +138,26 @@
             </a>
           </div>
 
-          <div class="project-image">
-            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+Three"
-                 alt="Screenshot placeholder for Project Three">
+          <div class="project-image carousel">
+            <img src="project-1.jpg" alt="Project screenshot">
+            <img src="project-2.jpg" alt="Project screenshot">
+            <img src="project-3.jpg" alt="Project screenshot">
           </div>
         </article>
 
         <!-- PROJECT 4 -->
         <article class="project project-image-left">
-          <div class="project-image">
-            <img src="https://placehold.co/1200x800/151515/ffffff?text=Project+Four"
-                 alt="Screenshot placeholder for Project Two">
+          <div class="project-image carousel">
+            <img src="project-1.jpg" alt="Project screenshot">
+            <img src="project-2.jpg" alt="Project screenshot">
+            <img src="project-3.jpg" alt="Project screenshot">
           </div>
 
           <div class="project-content">
             <p class="project-number">02</p>
             <h3>Location Based Arrousal Prediction for Places and Flows</h3>
             <p>
-              A short explanation of the project. Describe the technologies
-              you used and what you learned while building it.
+              A short explanation of the project.
             </p>
 
             <div class="project-tags">
@@ -274,6 +275,43 @@
       },
       { passive: false }
     );
+  </script>
+
+  <script>
+    document.querySelectorAll(".carousel").forEach(carousel => {
+
+      const images = [...carousel.querySelectorAll("img")];
+      let current = 0;
+
+      function update() {
+
+        images.forEach((img, i) => {
+
+          img.className = "";
+
+          if (i === current) {
+            img.classList.add("current");
+          }
+
+          if (i === (current + 1) % images.length) {
+            img.classList.add("next");
+          }
+
+          if (i === (current - 1 + images.length) % images.length) {
+            img.classList.add("previous");
+          }
+
+        });
+      }
+
+      update();
+
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        update();
+      }, 6000);
+
+    });
   </script>
 </body>
 </html>

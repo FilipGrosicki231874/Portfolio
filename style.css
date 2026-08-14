@@ -233,7 +233,7 @@ textarea {
 
 .work {
   padding-top: clamp(3rem, 6vw, 6rem);
-  padding-bottom: clamp(7rem, 12vw, 12rem);
+  padding-bottom: clamp(3rem, 6vw, 6rem);
 }
 
 .section-heading {
@@ -254,16 +254,64 @@ textarea {
 }
 
 .project {
+  position: relative;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: clamp(2rem, 7vw, 8rem);
+
+  padding-block: clamp(5rem, 9vw, 9rem);
+
+  border-top: 1px solid var(--border);
+}
+
+.project:first-child {
+  border-top: none;
+  padding-top: 0;
 }
 
 .project-image {
   overflow: hidden;
   background: var(--surface);
   aspect-ratio: 3 / 2;
+}
+
+.carousel {
+  position: relative;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.carousel img {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+
+  transition: all 1s ease;
+}
+
+.carousel img:nth-child(1) {
+  z-index: 3;
+  left: 5%;
+  top: 5%;
+}
+
+.carousel img:nth-child(2) {
+  z-index: 2;
+  left: 15%;
+  top: 10%;
+  opacity: 0.4;
+  transform: scale(0.9) rotateY(-10deg);
+}
+
+.carousel img:nth-child(3) {
+  z-index: 1;
+  left: -5%;
+  top: 10%;
+  opacity: 0.4;
+  transform: scale(0.9) rotateY(10deg);
 }
 
 .project-image img {
