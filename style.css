@@ -9,7 +9,7 @@
   --text: #f5f5f5;
   --muted: #a0a0a0;
   --border: #292929;
-  --accent: #e100ff;
+  --accent: #ff00d0;
   --accent-dark: #b000c7;
 
   --max-width: 1400px;
@@ -161,9 +161,9 @@ textarea {
   right: 0;
 }
 
-/* ---------- HERO ---------- */
+/* ---------- BUSINESS CARD ---------- */
 
-.hero {
+.business-card {
   min-height: 100vh;
   padding-top: var(--header-height);
 
@@ -173,30 +173,30 @@ textarea {
   gap: clamp(3rem, 7vw, 8rem);
 }
 
-.hero-image {
+.self-image {
   height: min(72vh, 760px);
   overflow: hidden;
   background: var(--surface);
 }
 
-.hero-image img {
+.self-image img {
   height: 100%;
   object-fit: cover;
   filter: grayscale(20%);
 }
 
-.hero-content {
+.self-content {
   max-width: 760px;
 }
 
-.hero-content h1 {
+.self-content h1 {
   margin-top: 0.25rem;
   font-size: clamp(4rem, 9vw, 9rem);
   line-height: 0.88;
   letter-spacing: -0.075em;
 }
 
-.hero-content h2 {
+.self-content h2 {
   margin-top: 1.5rem;
   color: var(--muted);
   font-size: clamp(1.25rem, 2.5vw, 2rem);
@@ -204,7 +204,7 @@ textarea {
   letter-spacing: -0.03em;
 }
 
-.hero-description {
+.self-description {
   max-width: 620px;
   margin: 2rem 0;
   color: var(--muted);
@@ -232,7 +232,7 @@ textarea {
 /* ---------- WORK ---------- */
 
 .work {
-  padding-top: clamp(7rem, 12vw, 12rem);
+  padding-top: clamp(3rem, 6vw, 6rem);
   padding-bottom: clamp(7rem, 12vw, 12rem);
 }
 
@@ -477,7 +477,7 @@ textarea {
     font-size: 0.75rem;
   }
 
-  .hero {
+  .self {
     min-height: auto;
     padding-top: calc(var(--header-height) + 3rem);
     padding-bottom: 6rem;
@@ -486,12 +486,12 @@ textarea {
     gap: 2.5rem;
   }
 
-  .hero-image {
+  .self-image {
     height: 60vh;
     max-height: 600px;
   }
 
-  .hero-content h1 {
+  .self-content h1 {
     font-size: clamp(3.5rem, 18vw, 7rem);
   }
 
@@ -506,7 +506,7 @@ textarea {
   }
 
   /*
-    On mobile every project becomes:
+    Mobile allighment for every project becomes:
     image -> text
   */
   .project-image {
@@ -534,7 +534,7 @@ textarea {
     display: none;
   }
 
-  .hero-image {
+  .my-image {
     height: 55vh;
   }
 
