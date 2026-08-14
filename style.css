@@ -351,6 +351,10 @@ textarea {
   letter-spacing: -0.06em;
 }
 
+.project h3 span {
+  color: var(--accent);
+}
+
 .project-content > p:not(.project-number) {
   margin-bottom: 1.5rem;
   color: var(--muted);
