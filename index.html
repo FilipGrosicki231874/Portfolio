@@ -282,33 +282,30 @@
 
       function update() {
 
-        images.forEach((img, i) => {
-
-          img.className = "";
-
-          if (i === current) {
-            img.classList.add("current");
-          }
-
-          if (i === (current + 1) % images.length) {
-            img.classList.add("next");
-          }
-
-          if (i === (current - 1 + images.length) % images.length) {
-            img.classList.add("previous");
-          }
-
+        images.forEach(img => {
+          img.classList.remove("current", "next", "previous");
         });
+
+        images[current].classList.add("current");
+
+        if (images.length > 1) {
+          images[(current + 1) % images.length].classList.add("next");
+        }
+
+        if (images.length > 2) {
+          images[(current - 1 + images.length) % images.length]
+            .classList.add("previous");
+        }
       }
 
       update();
 
-      setInterval(() => {
+      carousel.addEventListener("click", () => {
         current = (current + 1) % images.length;
         update();
-      }, 6000);
+      });
 
     });
-  </script>
+    </script>
 </body>
 </html>
