@@ -493,28 +493,6 @@ textarea {
   margin-left: 0.5rem;
 }
 
-/* ---------- FOOTER ---------- */
-
-.site-footer {
-  padding: 2rem var(--side-padding);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.75rem;
-}
-
-.site-footer a {
-  transition: color 0.25s ease;
-}
-
-.site-footer a:hover {
-  color: var(--accent);
-}
-
 /* ---------- MOBILE ---------- */
 
 @media (max-width: 800px) {
